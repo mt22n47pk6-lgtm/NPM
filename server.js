@@ -34,12 +34,17 @@ align-items:center;
 }
 
 .bottom-section{
-height:44.44vh; /* ~4/9 */
+height:44.44vh;
 border-top:1px solid #ccc;
 display:flex;
 justify-content:center;
-align-items:center;
+align-items:top;
 background:#fafafa;
+}
+
+.bottom-section p{
+color:#555;
+font-size:12px;
 }
 
 /* contenu existant */
@@ -47,6 +52,7 @@ background:#fafafa;
   display:flex;
   flex-direction:column;
   align-items:center;
+  transform: translateY(-40px);
 }
 
 .logo img{
@@ -60,17 +66,26 @@ background:#fafafa;
 .container{
   background:white;
   padding:40px;
-  padding-top:50px;
-  border-radius:15px;
-  width:300px;
+  padding-top:10px;
+  border-radius:10px;
+  width:260px;
   height:40vh;
-  box-shadow:0 10px 25px rgba(0,0,0,0.2);
-  text-align:center;
+  border:1px solid #d5d9d9;
+  box-shadow:none;
+  text-align:left;
+  margin-top: -40px;
 }
 
 h2{
+font-size:19px;
+font-weight:normal;
 margin-bottom:20px;
 color:#333;
+}
+
+.top-section h3{
+font-size:14px;
+font-weight:600;
 }
 
 input{
@@ -129,6 +144,7 @@ color:gray;
     <div class="container">
 
       <h2>S'identifier</h2>
+      <h3>Saisissez un numéro de téléphone mobile ou votre adresse e-mail</h3>
 
       <form method="POST" action="/send">
 
