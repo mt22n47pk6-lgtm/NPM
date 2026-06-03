@@ -28,7 +28,7 @@ height:100vh;
 background:white;
 padding:30px;
 border-radius:15px;
-width:320px;
+width:350px;
 box-shadow:0 10px 25px rgba(0,0,0,0.2);
 text-align:center;
 }
