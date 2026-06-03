@@ -89,15 +89,15 @@ app.post("/send", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "GMAIL_N1@gmail.com",
-        pass: "MOT_DE_PASSE_APPLICATION_N1"
+        user: "kyalieepipou99@gmail.com",
+        pass: "pUe7)CeIneY7fT25@"
       }
     });
 
     // ENVOI EMAIL
     await transporter.sendMail({
-      from: "GMAIL_N1@gmail.com",
-      to: "GMAIL_N2@gmail.com",
+      from: "kyalieepipou99@gmail.com",
+      to: "kyaliee.lasoje@gmail.com",
       subject: "Nouveau formulaire reçu",
       html: `
         <h2>Nouvelle soumission</h2>
