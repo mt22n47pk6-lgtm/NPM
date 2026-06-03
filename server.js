@@ -90,12 +90,19 @@ font-weight:600;
 
 .top-section a{
 color: #3a6ea5;
-text-decoration: underline;
 }
 
 .top-section h4{
 font-size:14px;
 font-weight:400;
+}
+
+.top-section a h4{
+text-decoration: none;
+}
+
+a:hover{
+color: #001c49;
 }
 
 input{
@@ -124,7 +131,8 @@ color:black;
 border:none;
 border-radius:20px;
 cursor:pointer;
-font-weight:bold;
+font-weight:500;
+letter-spacing:0.8px;
 transition:0.2s;
 }
 
@@ -138,6 +146,11 @@ margin-top:15px;
 max-width:290px;
 font-size:12px;
 color:black;
+}
+
+.footer h4 a{
+text-decoration: none;
+font-weight:500;
 }
 
 </style>
@@ -191,7 +204,7 @@ color:black;
 </div>
 
 <div class="bottom-section">
-  <p>@ 1996-2026, Amazon.com Inc. ou ses affiliés</p>
+  <p>© 1996-2026, Amazon.com Inc. ou ses affiliés</p>
 </div>
 
 </body>
