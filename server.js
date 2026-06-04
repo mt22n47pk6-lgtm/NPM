@@ -270,7 +270,7 @@ font-size:12px;
   <div class="wrapper">
 
     <div class="logo">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbmdZn1ZFwtk1ibp75fmU1zaBGF8YLgJ3jLA&s" alt="Logo">
+      <img src="https://www.pngfind.com/pngs/m/348-3487125_available-on-amazon-logo-png-amazon-fr-logo.png" alt="Logo">
     </div>
 
     <div class="container">
