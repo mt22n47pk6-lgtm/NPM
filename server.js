@@ -53,7 +53,7 @@ font-size:12px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  transform: translateY(-15px);
+  transform: translateY(-23px);
 }
 
 .logo img{
@@ -69,8 +69,8 @@ font-size:12px;
   padding:25px;
   padding-top:2px;
   border-radius:8px;
-  width:300px;
-  height:39vh;
+  width:299px;
+  height:38.8vh;
   border:1px solid #d5d9d9;
   box-shadow:none;
   text-align:left;
@@ -147,7 +147,7 @@ box-shadow:0 0 1px #FFCE12;
 button{
 width:100%;
 padding:8px;
-font-size:14px;
+font-size:13.5px !important;
 margin-top:6px;
 background:#FFCE12;
 filter: brightness(1.05);
@@ -180,7 +180,7 @@ font-weight:500;
 
 .secondary-btn{
 display:block;
-width: 340px;      
+width: 335px;      
 margin-top: 2px;
 padding: 7px;
 background: white;
@@ -191,9 +191,10 @@ cursor: pointer;
 letter-spacing:0.1;
 text-align:center;
 text-decoration:none;
+font-size:13.5px;
 font-weight: 500;
 transition: 0.2s;
-transform: translateY(4px);
+transform: translateY(10px);
 }
 
 .secondary-btn:hover{
@@ -212,7 +213,7 @@ align-items: center;
 margin: 15px 0;
 color: #767676;
 font-size: 11.5px;
-transform: translateY(10px);
+transform: translateY(13px);
 }
 
 .separator::before,
