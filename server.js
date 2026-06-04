@@ -147,6 +147,7 @@ box-shadow:0 0 1px #FFCE12;
 button{
 width:100%;
 padding:8px;
+font-size:14px;
 margin-top:6px;
 background:#FFCE12;
 filter: brightness(1.05);
@@ -260,11 +261,6 @@ color:#555;
 font-size:12px;
 }
 
-.compte-btn{
-font-size:14px;
-
-}
-
 </style>
 </head>
 
@@ -313,7 +309,7 @@ font-size:14px;
     </div>
   <div class="separator">
     <span>Nouveau chez Amazon ?</span>
-  </div class="compte-btn"
+  </div>
   <a href="https://www.amazon.fr/ap/register?openid.return_to=https%3A%2F%2Fwww.amazon.fr%2F%3F%26tag%3Dhydraamazon05-21%26ref%3Dnav_signin%26adgrpid%3D154637622122%26hvpone%3D%26hvptwo%3D%26hvadid%3D683560492550%26hvpos%3D%26hvnetw%3Dg%26hvrand%3D3185657194183930010%26hvqmt%3De%26hvdev%3Dc%26hvdvcmdl%3D%26hvlocint%3D%26hvlocphy%3D9056101%26hvtargid%3Dkwd-10573980%26hydadcr%3D&prevRID=HNX7KK13CTXQVMQKJJT8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=frflex&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&webAuthnChallengeIdForAutofill=fGLJhWDlLgK7Csm5EGEHif0vXmCfwS2G%3AEU&webAuthnGetParametersForAutofill=eyJycElkIjoiYW1hem9uLmZyIiwiY2hhbGxlbmdlIjoiZkdMSmhXRGxMZ0s3Q3NtNUVHRUhpZjB2WG1DZndTMkciLCJ0aW1lb3V0IjozMjQ0NDEsIm1lZGlhdGlvbiI6ImNvbmRpdGlvbmFsIiwidXNlclZlcmlmaWNhdGlvbiI6InByZWZlcnJlZCJ9&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=frflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="secondary-btn">
   Créer votre compte Amazon
   </a>
