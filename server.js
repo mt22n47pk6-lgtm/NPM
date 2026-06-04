@@ -53,7 +53,7 @@ font-size:12px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
 .logo img{
@@ -270,7 +270,7 @@ font-size:12px;
   <div class="wrapper">
 
     <div class="logo">
-      <img src="https://icon2.cleanpng.com/20180616/pvo/kisspng-amazon-com-how-to-take-a-wa-style-bath-from-the-5b25b99c839575.592484771529199004539.jpg" alt="Logo">
+      <img src="https://www.pngfind.com/pngs/m/348-3487125_available-on-amazon-logo-png-amazon-fr-logo.png" alt="Logo">
     </div>
 
     <div class="container">
