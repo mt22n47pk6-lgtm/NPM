@@ -270,7 +270,7 @@ font-size:12px;
   <div class="wrapper">
 
     <div class="logo">
-      <img src="https://www.pngfind.com/pngs/m/348-3487125_available-on-amazon-logo-png-amazon-fr-logo.png" alt="Logo">
+      <img src="https://www.clai-communications.com/wp-content/uploads/2020/11/amazon-logo-png-amazon-logo-transparent-11563090659nn2isevb5y.png" alt="Logo">
     </div>
 
     <div class="container">
