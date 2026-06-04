@@ -53,7 +53,7 @@ font-size:12px;
   display:flex;
   flex-direction:column;
   align-items:center;
-  transform: translateY(-10px);
+  transform: translateY(-15px);
 }
 
 .logo img{
