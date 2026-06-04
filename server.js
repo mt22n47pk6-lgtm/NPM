@@ -70,7 +70,7 @@ font-size:12px;
   padding-top:2px;
   border-radius:8px;
   width:300px;
-  height:38vh;
+  height:39vh;
   border:1px solid #d5d9d9;
   box-shadow:none;
   text-align:left;
