@@ -20,7 +20,7 @@ res.send(`
 body{
 margin:0;
 font-family: Arial, sans-serif;
-background: #ff0000);
+background: #ffffff);
 height:100vh;
 display:flex;
 flex-direction:column;
@@ -28,7 +28,7 @@ flex-direction:column;
 
 /* 2 sections */
 .top-section{
-color:red;
+color:white;
 height:72vh;
 display:flex;
 justify-content:center;
