@@ -67,7 +67,7 @@ font-size:12px;
   background:white;
   padding:25px;
   padding-top:2px;
-  border-radius:9px;
+  border-radius:8px;
   width:300px;
   height:40vh;
   border:1px solid #d5d9d9;
